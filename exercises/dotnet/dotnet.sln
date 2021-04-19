@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "McrDigital.Bootcamp1.Checkout", "McrDigital.Bootcamp1.Checkout\McrDigital.Bootcamp1.Checkout.csproj", "{D2A3B4EF-390A-4146-B445-FB77CFDB056B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "McrDigital.Bootcamp1.Checkout.Tests", "McrDigital.Bootcamp1.Checkout.Tests\McrDigital.Bootcamp1.Checkout.Tests.csproj", "{C39C4F14-B872-4F56-9660-9F55B6036ACC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2A3B4EF-390A-4146-B445-FB77CFDB056B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A3B4EF-390A-4146-B445-FB77CFDB056B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A3B4EF-390A-4146-B445-FB77CFDB056B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A3B4EF-390A-4146-B445-FB77CFDB056B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C39C4F14-B872-4F56-9660-9F55B6036ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C39C4F14-B872-4F56-9660-9F55B6036ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C39C4F14-B872-4F56-9660-9F55B6036ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C39C4F14-B872-4F56-9660-9F55B6036ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {996E930C-41A9-45E4-A19B-A4356DB8C98B}
+	EndGlobalSection
+EndGlobal
