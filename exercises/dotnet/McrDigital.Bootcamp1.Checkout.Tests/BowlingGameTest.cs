@@ -2,12 +2,21 @@
 namespace McrDigital.Bootcamp1.Checkout.Tests
 {
     public class BowlingGameTests
+
     {
+        private Game game;
+
+        public BowlingGameTests()
+        {
+            this.game = new Game() ;
+        }
+
+
         [Fact]
         public void ScoreReturnsZero()
         {
             //Arrange
-            var game = new Game();
+            
             var rolls = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
             //Act
@@ -23,7 +32,7 @@ namespace McrDigital.Bootcamp1.Checkout.Tests
         public void WhenRollsArePlayedThenReturnsScore()
         {
             //Arrange
-            var game = new Game();
+            
             var rolls = new int[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
 
             //Act
@@ -35,11 +44,10 @@ namespace McrDigital.Bootcamp1.Checkout.Tests
         }
 
         [Fact]
-        
         public void ShouldCalculateScoreWhenSpareIsIncluded()
         {
             //Arrange
-            var game = new Game();
+            
             var rolls = new int[] { 5, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
             //Act
@@ -47,6 +55,21 @@ namespace McrDigital.Bootcamp1.Checkout.Tests
 
             //Assert
             Assert.Equal(12, score);
+
+        }
+
+        [Fact]
+        public void ShouldCalculateScoreWhenStrikeIsIncluded()
+        {
+            //Arrange
+
+            var rolls = new int[] { 10, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+            //Act
+            var score = game.Score(rolls);
+
+            //Assert
+            Assert.Equal(14, score);
 
         }
 
